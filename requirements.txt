@@ -1,0 +1,8 @@
+tqdm
+requests
+pytorch-lightning
+pandas
+matplotlib
+einops
+transformers
+tensorboard
