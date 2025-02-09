@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ```
 
 # Dataset Preparation
-We use Cityscapes dataset for our experiments. Especially, we use the `leftImg8bit_sequence_trainvaltest` sequences. In order to extract segmentation maps we utilize [Segmenter](https://github.com/rstrudel/segmenter). In order to extract depth maps we utilize [DepthAnythingV2](https://github.com/DepthAnything/Depth-Anything-V2). You can skip downloading `leftImg8bit_sequence_trainvaltest` and preprocessing and simply download the precomputed segmentation maps from [here](https://drive.google.com/drive/u/0/folders/14wEaVfIuKpAMpZsOqy8T6AAArYC_gc2r) and depth maps from [here](https://drive.google.com/file/d/1o-JyuA4l4vG4rEIF-gZTS2RyS3jRMf31/view?usp=sharing). Also, in order to evaluate futurist `gtFine` needs to be processed using cityscapesScripts. Alternatively, you can download the processed dataset from [here](https://drive.google.com/file/d/1kd8KzEf8S5jlMAIPMoxOqW2cbjSlCs4w/view?usp=sharing). The final structure of the dataset should be as follow.
+We use Cityscapes dataset for our experiments. Especially, we use the `leftImg8bit_sequence_trainvaltest` sequences. In order to extract segmentation maps we utilize [Segmenter](https://github.com/rstrudel/segmenter). In order to extract depth maps we utilize [DepthAnythingV2](https://github.com/DepthAnything/Depth-Anything-V2). You can skip downloading `leftImg8bit_sequence_trainvaltest` and preprocessing and simply download the precomputed segmentation maps from [here](https://drive.google.com/file/d/1PpXcFm_8gQP_g7H-hAR2-QRUmTH9jXlw/view?usp=sharing) and depth maps from [here](https://drive.google.com/file/d/1o-JyuA4l4vG4rEIF-gZTS2RyS3jRMf31/view?usp=sharing). Also, in order to evaluate futurist `gtFine` needs to be processed using cityscapesScripts. Alternatively, you can download the processed dataset from [here](https://drive.google.com/file/d/1kd8KzEf8S5jlMAIPMoxOqW2cbjSlCs4w/view?usp=sharing). The final structure of the dataset should be as follow.
 
 ```
 cityscapes
@@ -94,6 +94,14 @@ We provide 2 quick demos.
 
 # Citation
 If you found Futurist useful in your research, please consider starring ⭐ us on GitHub and citing 📚 us in your research!
+```bibtex
+@article{karypidis2025advancing,
+  title={Advancing Semantic Future Prediction through Multimodal Visual Sequence Transformers},
+  author={Karypidis, Efstathios and Kakogeorgiou, Ioannis and Gidaris, Spyros and Komodakis, Nikos},
+  journal={arXiv preprint arXiv:2501.08303},
+  year={2025}
+}
+```
 
 # Acknowledgements
 Our code is partially based on [Maskgit-pytorch](https://github.com/valeoai/Maskgit-pytorch), [DepthAnythingV2](https://github.com/DepthAnything/Depth-Anything-V2), [Segmenter](https://github.com/rstrudel/segmenter) for their work and open-source code.
