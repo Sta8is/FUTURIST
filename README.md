@@ -6,8 +6,8 @@
 <sup>1</sup>Archimedes/Athena RC <sup>2</sup>valeo.ai  
 <sup>3</sup>National Technical University of Athens  <sup>4</sup>University of Crete   <sup>5</sup>IACM-Forth
 
-[![DINO--Foresight](https://img.shields.io/badge/arXiv-2501.08303-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.08303)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1K8o3-zkR5lCdAv7Qjz7rhWP8n2VrFOdz?usp=drive_link)
+[![FUTURIST](https://img.shields.io/badge/arXiv-2501.08303-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.08303)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fS51KGb1nwDiLplVcM4stypQe3Qtb5iW?usp=sharing)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 </div>
