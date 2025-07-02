@@ -9,6 +9,8 @@
 [![FUTURIST](https://img.shields.io/badge/arXiv-2501.08303-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2501.08303)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fS51KGb1nwDiLplVcM4stypQe3Qtb5iW?usp=sharing)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Pretrained_Model-blue)](https://huggingface.co/Sta8is/FUTURIST/blob/main/futurist.ckpt)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-yellow)](https://huggingface.co/papers/2501.08303)
 
 </div>
 
@@ -76,7 +78,12 @@ python train_futurist.py --num_gpus=8 --precision 16-mixed --eval_freq 10 --batc
     --dst_path "/logdir/futurist" --masking_strategy "par_shared_excl" --modal_fusion "concat" 
 ```
 # Evaluation
-You can also download the pre-trained model from [here](https://drive.google.com/file/d/1dCxSX7o2su9neB28RID1Y2vnb0tITGd_/view?usp=sharing). To evaluate Futurist trained model use the following command:
+You can also download the pre-trained model from [here](https://huggingface.co/Sta8is/FUTURIST/blob/main/futurist.ckpt) or via CLI using
+```bash
+wget https://huggingface.co/Sta8is/FUTURIST/resolve/main/futurist.ckpt
+```
+
+To evaluate Futurist trained model use the following command:
 ```bash
 python train_futurist.py --num_gpus=4 --precision 16-mixed --eval_freq 10 --batch_size 2  --max_epochs 3200 --lr_base 4e-5 --patch_size 16 \
     --eval_mode_during_training --evaluate --single_step_sample_train  --masking "simple_replace" --seperable_attention --random_horizontal_flip \
@@ -95,12 +102,13 @@ We provide 2 quick demos.
 # Citation
 If you found Futurist useful in your research, please consider starring ⭐ us on GitHub and citing 📚 us in your research!
 ```bibtex
-@article{karypidis2025advancing,
-  title={Advancing Semantic Future Prediction through Multimodal Visual Sequence Transformers},
-  author={Karypidis, Efstathios and Kakogeorgiou, Ioannis and Gidaris, Spyros and Komodakis, Nikos},
-  journal={arXiv preprint arXiv:2501.08303},
-  year={2025}
-}
+@InProceedings{Karypidis_2025_CVPR,
+author = {Karypidis, Efstathios and Kakogeorgiou, Ioannis and Gidaris, Spyros and Komodakis, Nikos},
+title = {Advancing Semantic Future Prediction through Multimodal Visual Sequence Transformers},
+booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+month = {June},
+year = {2025},
+pages = {3793-3803}
 ```
 
 # Acknowledgements
